@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Book>
+
+@{
+    ViewData["Title"] = "Kitap Listesi";
+
+}
+
+<h2>Kitap Listesi</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Kitap Adi</th>
+            <th>Kitap Yazari</th>
+        </tr>
+
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var book in Model)
+
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+            </tr>
+        }
+
+    </tbody>
+
+
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Yeni Kitap Ekle</a>
