@@ -6,6 +6,7 @@
         public string isim { get; set; }
         public string Soyisim { get; set; }
         public int  Yas { get; set; }
+        public int Maas {  get; set; }
 
     }
 }

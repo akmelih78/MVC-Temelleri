@@ -8,9 +8,9 @@ namespace MVC_Temelleri.Controllers
     {
         private static List<XYZ> xyzs = new List<XYZ>
         {
-            new XYZ{Id =1,isim="Hasan",Soyisim="Demirci",Yas=23},
-            new XYZ{Id =1,isim="Hamdi",Soyisim="Tasyürek",Yas=32},
-            new XYZ{Id =1,isim="Sahin",Soyisim="Onurtekin",Yas=29},
+            new XYZ{Id =1,isim="Hasan",Soyisim="Demirci",Yas=23,Maas=45000},
+            new XYZ{Id =2,isim="Hamdi",Soyisim="Tasyürek",Yas=32,Maas=28000},
+            new XYZ{Id =3,isim="Sahin",Soyisim="Onurtekin",Yas=29,Maas=38000},
         };
 
         [HttpGet("/XYZ")]
