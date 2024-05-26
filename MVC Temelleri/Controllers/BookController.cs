@@ -21,5 +21,19 @@ namespace MVC_Temelleri.Controllers
 
             return View(books);
         }
+
+        [HttpGet("/Books/Create")]
+        public IActionResult Create()
+        {
+            return View(); 
+        
+        }
+        [HttpPost("/Books/Create")]
+        public IActionResult Edit(Book book)
+        {
+            book.Id = books.Count + 1;
+            books.Add(book);
+            return RedirectToAction("Index");
+        }
     }
 }

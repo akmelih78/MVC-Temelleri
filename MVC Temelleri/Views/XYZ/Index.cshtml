@@ -1,0 +1,37 @@
+﻿@model IEnumerable<XYZ>
+
+@{
+    ViewData["Title"] = "Isim Listesi";
+
+}
+
+<h2>Isim Listesi</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Isim</th>
+            <th>Soyisim</th>
+            <th>Yas</th>
+        </tr>
+
+
+    </thead>
+
+    <tbody>
+
+        @foreach (var xyzs in Model)
+
+        {
+            <tr>
+                <td>@xyzs.isim</td>
+                <td>@xyzs.Soyisim</td>
+                <td>@xyzs.Yas</td>
+            </tr>
+        }
+
+    </tbody>
+
+
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Yeni Kisi Ekle</a>
